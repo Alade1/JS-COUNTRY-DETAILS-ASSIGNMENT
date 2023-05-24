@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap');
-
+@import "./component/mediaqueries";
 * {
+    @media (max-width:600px) {
+        overflow-x: hidden;
+      }
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +20,12 @@ body{
 
         }
         #card-container{
+            @media (max-width:600px) {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding-left:30px;
+              }
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;

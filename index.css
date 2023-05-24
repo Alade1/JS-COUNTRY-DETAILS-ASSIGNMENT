@@ -5,6 +5,11 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
+@media (max-width: 600px) {
+  * {
+    overflow-x: hidden;
+  }
+}
 * body main .header {
   color: black;
   text-align: center;
@@ -16,6 +21,14 @@
   gap: 20px;
   padding-left: 3rem;
   padding-top: 1rem;
+}
+@media (max-width: 600px) {
+  * body main #card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 30px;
+  }
 }
 * body div .cardBody .card {
   font-size: 14px;
